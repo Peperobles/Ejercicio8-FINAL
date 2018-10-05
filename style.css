@@ -51,7 +51,6 @@ h1 span#logo{
     clear: both;
     margin: 0;
     padding: 50px;
-    width: 100%;
     height: 600px;
     background: url(images/inicio/otro3.jpg);
     background-position: center;
@@ -98,6 +97,10 @@ h1 span#logo{
     padding: 10px;
     text-align: center;
     border: 1px dashed #ccc;
+    filter: grayscale(100);
+}
+.beneficios:hover{
+    filter: grayscale(0);
 }
 .beneficios h3{
     text-transform: uppercase;
@@ -128,7 +131,11 @@ h1 span#logo{
     padding: 10px;
     opacity: 0.9;
     text-align: justify;
-    font-family: sans-serif; 
+    font-family: sans-serif;
+    filter: grayscale(0.5); 
+}
+.contenido2texto:hover{
+    filter: grayscale(0);
 }
 .contenido2texto h3{
     color: black;
@@ -149,7 +156,7 @@ h1 span#logo{
 .ultimasofertas{
     float: right;
     width: 20%;
-    border: 1px solid #0066cc;
+    
     text-align: center;
 }
 #ultimasofertashead{
@@ -159,19 +166,29 @@ h1 span#logo{
     color: #0066cc;
 }
 .ultimasofertas h3{
-    color: blue;
+    color: #0080ff;
     font-family: sans-serif;
 }
-.oferta1 img{
-    width: 40%;
+.ultimasofertas p{
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 10px;
+}
+.testimonio img{
+    width: 200px;
+    border-radius: 100px;
+}
+.testimonio strong{
+    font-size: 1.2em;
 }
 
 
 
 /* INSTAGRAM */
 .instagram{
+    clear: both;
     margin-top: 65em;
-    background: url(https://images.unsplash.com/photo-1531986362435-16b427eb9c26?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7550d4daa89fd0aac9ec4ce58c47546f&auto=format&fit=crop&w=1350&q=80);
+    background: url(images/inicio/otro4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,7 +213,7 @@ h1 span#logo{
 
 /* NEWSLETTER */
 .newsletter{
-    width: 100%;
+    clear: both;
     background-color: #0066cc;
     padding: 10px;
     text-align: center;
@@ -210,13 +227,30 @@ h1 span#logo{
     margin-top: 10px;
     clear: both;
 }
+.newsletter input[type=email]{
+    padding: 10px;
+    border: 1px solid white;
+    width: 300px;
+}
+.newsletter input[type=image]{
+    position: relative;
+    top: 5px;
+    right: 40px;
+    filter: grayscale(0);
+}
+.newsletter input[type=image]:hover{
+    filter: grayscale(100);
+}
+
 
 /* FOOTER */
 footer{
-    background-color: #1a1a1a;
-    color: #ccc;
+    background-color: #595959;
+    color: #8c8c8c;
     height: 150px;
     padding: 1px;
+    font-family: monospace;
+    font-size: 1.2em;
 }
 footer h3{
     margin: 0;
@@ -229,43 +263,328 @@ footer h3{
     list-style: none;
 }
 .divfooter a{
-    color: white;
+    color: #ccc;
     text-decoration: none;
 }
 .divfooter span{
-    color: #0066cc;
-    font-weight: bold;
+    color: #0080ff;
+    font-weight: normal;
 }
-
-#footermenu ul li a{
+#footermenu{
+    text-align: center;
+}
+#footermenu ul li{
     color: #ccc;
     text-decoration: none;
 }
 #footermenu ul li a:hover{
-    color: #0066cc;
-    text-decoration: underline;
+    color: white;
 }
 
-#footerwhatsapp{
-    list-style-image: url(images/iconosfooter/whatsapp.png);
+#footersocial{
+    text-align: center;
 }
-#footerfacebook{
-    list-style-image: url(images/iconosfooter/facebook.png);
+#footersocial ul li{
+    display: inline;
+    text-align: center;
 }
-#footertwitter{
-    list-style-image: url(images/iconosfooter/twitter.png);
+#footersocial ul li img{
+    filter: grayscale(100)
 }
-#footerlinkedin{
-    list-style-image: url(images/iconosfooter/linkedin.png);
+#footersocial ul li img:hover{
+    filter: grayscale(0)
+}
+
+#footerdatos{
+    text-align: center;
 }
 
 /* FOOTERCOPY */
 #footercopy{
+    font-family: monospace;
     padding: 5px;
-    background: #ccc;
+    background: #666666;
     text-align: center;
-    color: black;
+    color: #8c8c8c;
 }
 #footercopy p{
     margin: 0;
+}
+
+
+/* -------------------SOBRE NOSOTROS------------------- */
+.sobrenosotros {
+    clear: both;
+    width: 80%;
+    margin: auto;
+}
+
+.conocenos {
+    text-align: center;
+    height: 200px;
+    background: url(images/personas/conocenos.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    opacity: 0.5;
+}
+.conocenos h2 {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.conocenos-general {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+.conocenos-general h3{
+    color: #0066cc;
+}
+
+.conocenos-general p{
+    text-align: justify;
+}
+
+.conocenos-personal{
+    filter: grayscale(100);
+    float: left;
+    border: 1px dotted #ccc;
+    margin: 5px;
+    background: #f2f2f2;
+    padding: 10px;
+    width: 22.5%;
+}
+.conocenos-personal:hover{
+    filter: grayscale(0);
+}
+
+.conocenos-personal img{
+    margin-left: 20px;    
+    width: 305px;
+    border-radius: 50px;
+    
+}
+.conocenos-personal h3{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #0066cc;
+    font-size: 2em;
+}
+.conocenos-personal span{
+    color: #1a1a1a;
+}
+.conocenos-personal h4{
+    text-align: center;
+    font-family: monospace;
+    color: #0080ff;
+    font-size: 2em;
+}
+
+.conocenos-personal p{
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+/* ------------------------------CATALOGO------------------------------ */
+.catalogo {
+    clear: both;
+    width: 80%;
+    margin: auto;
+}
+
+.catalogo-header {
+    text-align: center;
+    height: 200px;
+    background: url(images/scooters/catalogo-header.jpg);
+    background-size: cover;
+    background-position: 50% 15%;
+    opacity: 0.5;
+}
+.catalogo-header h2 {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.productos-general {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background: #f2f2f2;
+    font-family: sans-serif;
+}
+
+.productos-general h3{
+    color: #0066cc;
+}
+
+.productos-general p{
+    text-align: justify;
+}
+
+.productos-unidad{
+    float: left;
+    border: 1px dotted #ccc;
+    margin: 5px;
+    background: white;
+    padding: 10px;
+    width: 22.5%;
+    filter: grayscale(100);
+}
+.productos-unidad:hover{
+    filter: grayscale(0);
+    background-color: #f2f2f2;
+}
+.productos-unidad img{
+    margin-left: 20px;    
+    width: 305px;
+    border-radius: 50px;
+    
+}
+.productos-unidad h3{
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #0066cc;
+    font-size: 2em;
+}
+.productos-unidad span{
+    color: #1a1a1a;
+}
+.productos-unidad h4{
+    text-align: center;
+    font-family: monospace;
+    color: #0080ff;
+    font-size: 2em;
+}
+
+.productos-unidad p{
+    text-align: justify;
+    font-family: sans-serif;
+    color: #0066cc;
+}
+.boton{
+    margin: 25px 0px 10px 125px;
+}
+.productos-unidad a{
+    text-decoration: none;
+    color: #0066cc;
+    border: 1px solid #0066cc;
+    padding: 10px;
+}
+.productos-unidad a:hover{
+    background: #0080ff;
+    color: #fff;
+}
+#separador{
+    height: 500px;;
+}
+#separador2{
+    height: 100px;
+}
+
+/* -----------------------CONTACTO----------------------- */
+.contacto {
+    clear: both;
+    width: 80%;
+    margin: auto;
+}
+
+.contactanos {
+    text-align: center;
+    height: 200px;
+    background: url(images/contacto/contacto-header.jpg);
+    background-size: cover;
+    background-position: 50% 60%;
+    opacity: 0.5;
+}
+.contactanos h2 {
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.contacto-general {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background: #f2f2f2;
+    font-family: sans-serif;
+    border-bottom: 1px solid #0066cc;
+}
+
+.contacto-general h3{
+    color: #0066cc;
+}
+
+.contacto-general p{
+    text-align: justify;
+}
+
+.contacto-left {
+    font-size: 1.5em;
+    float: left;
+    width: 30%;
+    margin-left: 100px;
+}
+
+.contacto-left h3{
+    color: #0066cc;
+    font-family: monospace;
+    border-bottom: 1px dotted #0080ff;
+}
+
+.contacto-left p{
+    font-family: sans-serif;
+}
+
+.contacto-right{
+    float: right;
+    width: 50%;
+    margin: 0px 100px 10px 0px;
+    color: #0066cc;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+.contacto-right h3{
+    border-bottom: 1px dotted #0080ff;
+}
+.contacto-right form input{
+    display: block;
+    border: 1px solid #0080ff;
+    width: 50%;
+    margin: 5px;
+    padding: 10px 5px;
+}
+.contacto-right form textarea {
+    padding: 10px 5px;
+    border: 1px solid #0080ff;
+    margin: 5px;
+    width: 50%;
+}
+
+#boton-formulario{
+    width: 52%;
+    padding: 5px 10px;
+    color: #0066cc;
+    background: white;
+    border: 1px solid #0080ff;
+}
+#boton-formulario:hover{
+    background: #0066cc;
+    color: white;
 }
